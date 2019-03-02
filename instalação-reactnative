@@ -1,7 +1,7 @@
------------------------------------------------
-|   INSTALAÇÃO REACT NATIVE                   |
-|   https://facebook.github.io/react-native/  |
------------------------------------------------
+┌───────────────────────────────────────────────────────────────────┐
+│                       INSTALAÇÃO REACT NATIVE                     │
+│             https://facebook.github.io/react-native/              │
+└───────────────────────────────────────────────────────────────────┘
 
 :::::::::::::::: LINUX / MACOS ::::::::::::::::
 
@@ -41,11 +41,12 @@ Passo 7: Executar App - Digitar comando, dentro da pasta do App
 react-native run-ios
 ou
 react-native run-android
-  
--------------------------------------------------------------------------------------------
-    ATENÇÃO - -bash: react-native: command not found "Erro de comando não encontrado"
--------------------------------------------------------------------------------------------
 
+┌───────────────────────────────────────────────────────────────────┐
+│                              ATENÇÃO                              │
+│                       bash: react-native:                         │
+│         command not found "Erro de comando não encontrado"        │           
+└───────────────────────────────────────────────────────────────────┘
 Passo 1 - Verificar em seu PATH o local de instalação de seus binários instalados com npm
   
 npm list -g | head -n 1
