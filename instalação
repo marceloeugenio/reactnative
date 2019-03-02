@@ -1,0 +1,66 @@
+-----------------------------------------------
+|   INSTALAÇÃO REACT NATIVE                   |
+|   https://facebook.github.io/react-native/  |
+-----------------------------------------------
+
+:::::::::::::::: LINUX / MACOS ::::::::::::::::
+
+Passo 1: Instalar o Homebrew - é um gerenciador de pacotes para OS X muito famoso e útil. Vamos instalá-lo em
+nosso sistema com o seguinte comando: atenção - "O Ruby já vem instalado com o sistema OS X, se em algum caso não 
+tiver instalado no seu sistema, procure seguir o tutorial de instalação através do site do Ruby."
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  
+Passo 2: Instalar Node
+
+brew install node
+
+Passo 3: Instalar Watchman - O Watchman, que representa um serviço observador (watcher) de arquivos do Facebook. Ele basicamente 
+observa eventuais mudanças em arquivos e o avisa quando elas ocorrerem. Ele também é capaz de executar ações 
+pré-programadas quando alguma mudança se encaixar no teste codificado. No nosso caso, usaremos o Watchman para validar quando 
+o nosso código mudar e, então, efetuar o rebuild automático no mesmo. Isso funciona mais ou menos como no Xcode que faz  
+o rebuild do código sempre que salvamos um arquivo;
+
+brew install watchman
+
+Passo 4: Verificar se o node foi instalado corretamente
+  
+node -v
+
+Passo 5: Instalar ReactNative CLI - Com o NodeJS instalado podemos seguir para a instalação do CLI (Command Line Interface) do
+React Native
+  
+npm install -g react-native-cli
+
+Passo 6: Entrar na pasta que deseja criar à aplicação
+  
+react-native init TesteReactNative
+
+Passo 7: Executar App - Digitar comando, dentro da pasta do App
+
+react-native run-ios
+ou
+react-native run-android
+  
+-------------------------------------------------------------------------------------------
+    ATENÇÃO - -bash: react-native: command not found "Erro de comando não encontrado"
+-------------------------------------------------------------------------------------------
+
+Passo 1 - Verificar em seu PATH o local de instalação de seus binários instalados com npm
+  
+npm list -g | head -n 1
+
+Passo 2 - Na pasta do usuário, editar o arquivo de BASH
+  
+sudo nano .bash_profile
+
+Passo 3 - Incluir na última linha do arquivo de BASH, o caminho de instalação dos binários instalados com npm
+  
+export PATH=“/Users/marceloeugenio/.node/bin:$PATH”
+ou
+export PATH=“/usr/local/share/npm/bin:$PATH”
+
+Passo 4 - Atualizar o arquivo BASH na SESSION
+source .bash_profile
+ou
+fechar o terminal e reabrir
