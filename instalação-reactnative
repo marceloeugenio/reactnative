@@ -80,5 +80,5 @@ mais recente do Xcode. Tente mudar para o sistema de compilação herdado.
 Passo 3: Abra o menu suspenso Xcode 10, 
 File > 
 Project Settings > 
-Build System > 
-switch dropdown to Legacy Build System.
+Build System > Selecione a opção "Legacy Build System"
+
