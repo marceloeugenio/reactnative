@@ -45,7 +45,7 @@ react-native run-android
 ┌───────────────────────────────────────────────────────────────────┐
 │                              ATENÇÃO                              │
 │                       bash: react-native:                         │
-│         command not found "Erro de comando não encontrado"        │           
+│         command not found "Erro de comando não encontrado"        │         
 └───────────────────────────────────────────────────────────────────┘
 Passo 1 - Verificar em seu PATH o local de instalação de seus binários instalados com npm
   
@@ -65,3 +65,20 @@ Passo 4 - Atualizar o arquivo BASH na SESSION
 source .bash_profile
 ou
 fechar o terminal e reabrir
+
+┌───────────────────────────────────────────────────────────────────┐
+│                              ATENÇÃO                              │
+│                       ERRO PARA GERRAR APP IOS:                   │
+│             entrada “: CFBundleIdentifier”, não existe            │         
+└───────────────────────────────────────────────────────────────────┘
+
+Passo 1: abrir o arquivo "NomedoArquivo".xcodeproj do App no Xcode. 
+
+Passo 2: Se você estiver usando o Xcode 10, pode ser devido a uma incompatibilidade com o sistema de compilação 
+mais recente do Xcode. Tente mudar para o sistema de compilação herdado.
+
+Passo 3: Abra o menu suspenso Xcode 10, 
+File > 
+Project Settings > 
+Build System > 
+switch dropdown to Legacy Build System.
