@@ -68,6 +68,27 @@ fechar o terminal e reabrir
 
 ┌───────────────────────────────────────────────────────────────────┐
 │                              ATENÇÃO                              │
+│                     ERRO PARA GERRAR APP ANDROID:                 │
+└───────────────────────────────────────────────────────────────────┘
+
+Passo 1 - Na pasta do usuário, editar o arquivo de BASH
+  
+sudo nano .bash_profile
+
+Passo 2 - Incluir na última linha do arquivo de BASH, o caminho de instalação dos binários do Android
+
+export ANDROID_HOME = /Users/marceloeugenio/Library/Android/sdk
+export PATH=$PATH:ANDROID_HOME/tools
+export PATH=$PATH:ANDROID_HOME/platform-tools
+
+Passo 3 - Criar o arquivo "local.properties", na pasta Android do App
+
+Passo 4 - Adicionar o caminho do Android no arquivo "local.properties"
+
+sdk.dir = /Users/marceloeugenio/Library/Android/sdk
+
+┌───────────────────────────────────────────────────────────────────┐
+│                              ATENÇÃO                              │
 │                       ERRO PARA GERRAR APP IOS:                   │
 │             entrada “: CFBundleIdentifier”, não existe            │         
 └───────────────────────────────────────────────────────────────────┘
